@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poetsen One", sans-serif;
+    background-color: rgb(6, 16, 56);
+    display: flex;
+    align-items: center; /* aligne verticalement */
+    justify-content: center; /* aligne horizontalement */
+    height: 100vh;
+}
+
+.clock {
+    background: rgb(144, 111, 225);
+    border : 5px solid rgb(144, 111, 225);
+    border-radius: 50%;
+    box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+    width: 350px;
+    height: 350px;
+    position: relative;
+
+}
+
+.minute,
+.heure {
+    position: absolute;
+    height: 100px; width: 6px;
+    background: black;
+    margin:auto;
+    top: -27%;
+    right: 0;
+    bottom: 0;
+    left:0;
+    transform-origin: bottom center;
+    transform : rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.minute {
+    position : absolute;
+    height: 130px;
+    width: 4px;
+    top : -38%;
+    right: 0;
+    left:0;
+    
+    transform: rotate(90deg);
+    
+}
+
+.seconde {
+    position: absolute;
+    height: 90px; width: 2px;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left:0;
+    top : -26%;
+    background: red;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+
+}
+
+.point {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left:0;
+    top : 0;
+    background: white;
+    width: 12px;
+    height: 12px;
+    border : 1px solid black;
+    border-radius: 50%;
+}
